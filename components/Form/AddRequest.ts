@@ -13,12 +13,12 @@ export async function addContactRequest(
   });
 
   const json: ContactResponse = await res.json().catch(() => ({
-    ok: false,
+    success: false,
     message: "Unexpected server response.",
   }));
 
   if (!res.ok) {
-    throw new ApiError(res.status, json.message, json.fields);
+    throw new ApiError(json.message || "", res.status);
   }
 
   return json;
