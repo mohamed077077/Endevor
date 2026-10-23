@@ -45,8 +45,8 @@ export function Hero() {
   const h = t.hero;
 
   return (
-    <section className="pt-20">
-      <div className={`${container} grid items-center gap-8 py-10 lg:grid-cols-[1fr_1fr] lg:py-14`}>
+    <section className="pt-12 md:pt-20">
+      <div className={`${container} grid items-center gap-4 py-4 md:gap-8 md:py-10 lg:grid-cols-[1fr_1fr] lg:py-14`}>
         <div className="hero-rise">
           <p className="label text-ink">{h.eyebrow}</p>
           <h1 className="display mt-8 max-w-xl text-5xl leading-[1.02] sm:text-6xl lg:text-[4.25rem]">
@@ -59,11 +59,11 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto aspect-square w-full max-w-[34rem]">
+        <div className="relative mx-auto aspect-square w-full max-w-[34rem] hidden md:block">
           <Construction />
 
           {/* Logo eases in, then floats gently */}
-          <div className="hero-pop absolute inset-[24%]">
+          <div className=" hero-pop absolute inset-[24%]">
             <div className="hero-float flex h-full w-full items-center justify-center">
               <Image src={assets.logo} alt="" width={600} height={600} className="max-h-full w-full object-contain" priority />
             </div>

@@ -34,7 +34,7 @@ export function ProjectCard({
         target="_blank"
         rel="noopener noreferrer"
         aria-label={project.imageAlt || project.name}
-        className={`relative block aspect-[4/3] overflow-hidden border border-line bg-ink/[0.03] transition-colors duration-300 hover:border-ink/40 ${
+        className={`relative block object-contain aspect-[4/3] overflow-hidden border border-line bg-ink/[0.03] transition-colors duration-300 hover:border-ink/40 ${
           index % 2 ? "lg:order-2" : ""
         }`}
       >
@@ -44,7 +44,7 @@ export function ProjectCard({
             alt={project.imageAlt || project.name}
             fill
             sizes="(min-width:1024px) 40vw, 100vw"
-            className="object-cover"
+            className="object-cover hover:scale-105 transition-transform duration-500"
           />
         ) : (
           // Placeholder until a screenshot is added to /public/work and set in lib/content.ts

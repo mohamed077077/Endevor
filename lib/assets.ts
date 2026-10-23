@@ -6,8 +6,8 @@ export const assets = {
 // TODO: replace with ENDEVOR's own contact details and social accounts
 export const contact = {
   phone: "+201153883909",
-  whatsapp: "https://wa.me/201153883909",
-  linkedin: "https://www.linkedin.com/company/vixer-digital",
-  instagram: "https://www.instagram.com/vixerdigital/",
-  github: "https://github.com",
+  whatsapp: "https://wa.me/201125506839",
+  linkedin: "https://www.linkedin.com/in/mohamed077/",
+  instagram: "https://www.instagram.com/mhmdmhmwdywsf7",
+  github: "https://github.com/mohamed077077",
 };

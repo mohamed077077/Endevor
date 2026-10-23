@@ -86,7 +86,7 @@ export function About() {
   const review = a.reviews.items[reviews.active];
 
   return (
-    <section id="about" className="border-b border-line py-24 sm:py-32">
+    <section id="about" className="border-b border-line py-6 ">
       <div className={container}>
         <p className="label text-muted">{a.label}</p>
 
